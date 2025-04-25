@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for mobile scaling -->
   <style>
     body {
       margin: 0;
@@ -14,9 +15,9 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
-      padding: 40px 20px;
+      padding: 30px 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,37 +25,43 @@
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
+      margin-bottom: 20px;
       text-align: center;
-      margin-bottom: 30px;
     }
 
     .contact-boxes {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
       width: 100%;
     }
 
     .box {
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 1px solid white;
-      padding: 20px;
-      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid #fff;
+      border-radius: 12px;
+      padding: 18px;
       text-align: center;
-      font-size: 1.1em;
+      font-size: 1em;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
     }
 
     a {
       color: #00ffcc;
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    /* ----------- Desktop Style ----------- */
+    /* ---------- Desktop Style (768px and above) ---------- */
     @media (min-width: 768px) {
       h1 {
         font-size: 3em;
@@ -79,7 +86,7 @@
   <div class="overlay">
     <h1>Contact Me</h1>
     <div class="contact-boxes">
-       <div class="box">Phone: +91-7353465926</div>
+      <div class="box">Phone: +91-7353465926</div>
       <div class="box"><a href="https://wa.me/7353465926" target="_blank">WhatsApp</a></div>
       <div class="box"><a href="https://facebook.com/Pending" target="_blank">Facebook</a></div>
       <div class="box"><a href="https://instagram.com/ushasrifarm" target="_blank">Instagram</a></div>
