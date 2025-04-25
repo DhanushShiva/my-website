@@ -12,28 +12,28 @@
       font-family: Arial, sans-serif;
       color: white;
     }
- 
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
       min-height: 100vh;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
- 
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 40px;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .contact-boxes {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      width: 80%;
-      max-width: 400px;
+      width: 100%;
     }
 
     .box {
@@ -42,7 +42,7 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     a {
@@ -53,13 +53,33 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* ----------- Desktop Style ----------- */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+
+      .contact-boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+      }
+
+      .box {
+        flex: 1 1 40%;
+        margin: 10px;
+        font-size: 1.2em;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="overlay">
     <h1>Contact Me</h1>
     <div class="contact-boxes">
-      <div class="box">Phone: +91-7353465926</div>
+       <div class="box">Phone: +91-7353465926</div>
       <div class="box"><a href="https://wa.me/7353465926" target="_blank">WhatsApp</a></div>
       <div class="box"><a href="https://facebook.com/Pending" target="_blank">Facebook</a></div>
       <div class="box"><a href="https://instagram.com/Pending" target="_blank">Instagram</a></div>
