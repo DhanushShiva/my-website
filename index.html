@@ -84,23 +84,24 @@
     }
 
     /* Decoration images */
-    .pop-image {
-      position: absolute;
-      width: 120px;
-      opacity: 0.7;
-      z-index: 1;
-      pointer-events: none;
-    }
+  .pop-image {
+  position: absolute;
+  width: 250px; /* <<< made it bigger */
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2); /* <<< soft glowing shadow */
+}
 
     .pop1 {
-      top: 50px;
-      left: 30px;
-    }
+  top: 80px;   /* moved little lower from top */
+  left: 20px;  /* close to left */
+}
 
-    .pop2 {
-      bottom: 60px;
-      right: 40px;
-    }
+.pop2 {
+  bottom: 80px; /* moved little higher from bottom */
+  right: 20px;  /* close to right */
+}
   </style>
 </head>
 
