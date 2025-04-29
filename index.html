@@ -12,6 +12,8 @@
       background-size: cover;
       font-family: Arial, sans-serif;
       color: white;
+      <img src="pop1.image" class="pop-image pop1" alt="Decoration 1">
+      <img src="pop2.image" class="pop-image pop2" alt="Decoration 2">
     }
 
     .overlay {
@@ -80,6 +82,30 @@
         font-size: 1.2em;
       }
     }
+      .pop-image {
+  position: absolute;
+  width: 120px; /* adjust size as you want */
+  opacity: 0.7; /* semi-transparent */
+  z-index: 1; /* behind the boxes but above background */
+  pointer-events: none; /* don't let user click on these images */
+}
+
+.pop1 {
+  top: 50px;
+  left: 30px;
+}
+
+.pop2 {
+  bottom: 60px;
+  right: 40px;
+}
+
+/* Important: Make .overlay have higher z-index */
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
   </style>
 </head>
 <body>
