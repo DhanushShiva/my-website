@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://Dhanushshiva.github.io/my-website/pop1.png') no-repeat center center fixed;
+      background: url(https://Dhanushshiva.github.io/my-website/pop1.png')  no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
       color: white;
@@ -24,12 +24,33 @@
       justify-content: center;
       position: relative;
       z-index: 2;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      text-align: center;
+    .title-section {
+      margin-bottom: 30px;
+    }
+
+    .intro-line {
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .main-title {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+      font-style: italic;
+      color: #cccccc;
     }
 
     .contact-boxes {
@@ -63,10 +84,17 @@
       text-decoration: underline;
     }
 
-    /* ---------- Desktop Style (768px and above) ---------- */
     @media (min-width: 768px) {
-      h1 {
-        font-size: 3em;
+      .intro-line {
+        font-size: 2em;
+      }
+
+      .main-title {
+        font-size: 3.5em;
+      }
+
+      .tagline {
+        font-size: 1.5em;
       }
 
       .contact-boxes {
@@ -82,22 +110,17 @@
         font-size: 1.2em;
       }
     }
-
-   
-
   </style>
 </head>
 
 <body>
-
-
-
   <div class="overlay">
     <div class="title-section">
-  <h1 class="farm-name">Tender Mushrooms</h1>
-  <p class="subtitle"> UshaSri farm </p>
-  <h2>Contact Us</h2>
-</div>
+      <p class="intro-line"><span class="highlight">UshaSri Farm</span> presents</p>
+      <h1 class="main-title">Tender Mushrooms</h1>
+      <p class="tagline">Quality uplifts the trust</p>
+    </div>
+
     <div class="contact-boxes">
       <a  href="tel:+917353465926" class="box">Call: +91-7353465926</a>
       <a   href="https://wa.me/7353465926" target="_blank"   class="box"   >WhatsApp</a>
@@ -106,5 +129,7 @@
     </div>
   </div>
 
+    </div>
+  </div>
 </body>
 </html>
